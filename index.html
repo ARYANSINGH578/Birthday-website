@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #000000, #1f1f1f, #3d3d3d);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .birthday-container {
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            animation: pulse 2s infinite alternate;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .birthday-container:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.05);
+            }
+        }
+
+        .birthday-wish {
+            text-align: center;
+            animation: bounce 2s ease infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .rainbow-text {
+            background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            animation: glow 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00e6, 0 0 40px #ff00e6, 0 0 50px #ff00e6, 0 0 60px #ff00e6, 0 0 70px #ff00e6;
+            }
+            100% {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff00e6, 0 0 40px #ff00e6, 0 0 50px #ff00e6, 0 0 60px #ff00e6, 0 0 70px #ff00e6, 0 0 80px #ff00e6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="birthday-container">
+        <div class="birthday-wish">
+            <h1 class="rainbow-text">Happy Birthday!</h1>
+            <p>I Wish You a Happy and Fantastic Birthday.</p>
+            <p>HAPPY BIRTHDAY DHRUV JHA!</p>
+            <P>FORM ARYAN.</P>
+        </div>
+    </div>
+</body>
+</html>
